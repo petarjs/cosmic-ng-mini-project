@@ -8,14 +8,22 @@
   /** @ngInject */
   function routeConfig($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state('home', {
-        url: '/',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+      .state('login', {
+        url: '/login',
+        templateUrl: 'app/login/login.html',
+        controller: 'LoginController',
+        controllerAs: 'vm',
+        auth: false
+      })
+      .state('accomplishments', {
+        url: '/accomplishments',
+        templateUrl: 'app/accomplishments/accomplishments.html',
+        controller: 'AccomplishmentsController',
+        controllerAs: 'vm',
+        auth: true
       });
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/login');
   }
 
 })();
