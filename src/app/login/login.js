@@ -20,7 +20,7 @@
         .login(credentials.username, credentials.password)
         .then(function(response) {
           if(response.data) {
-            $state.go('accomplishments');
+              $state.go('accomplishments');
           }
 
           vm.credentials = {

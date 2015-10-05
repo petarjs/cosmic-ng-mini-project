@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6">{{acc.user.username}}</div>
+            <div class="col-md-6 text-right">{{acc.date}}</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">{{acc.description}}</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">Beers: {{acc.beers}}, Coffees: {{acc.coffees}}</div>
+            <div class="col-md-6 text-right"><button class="btn btn-primary" data-ng-click="addAccomplishment(acc.user.id, 'beer');">+1 <i class="fa fa-beer"></i></button> <button class="btn btn-primary" data-ng-click="addAccomplishment(acc.user.id, 'coffee');">+1 <i class="fa fa-coffee"></i></button></div>
+        </div>
+    </div>
+</div>

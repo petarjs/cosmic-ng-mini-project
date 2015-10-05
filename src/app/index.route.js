@@ -19,7 +19,7 @@
         url: '/accomplishments',
         templateUrl: 'app/accomplishments/accomplishments.html',
         controller: 'AccomplishmentsController',
-        controllerAs: 'vm',
+        controllerAs: 'accCtrl',
         auth: true
       });
 
